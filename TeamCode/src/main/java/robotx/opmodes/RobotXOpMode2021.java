@@ -9,26 +9,30 @@ import robotx.modules.ConveyorBelt;
 import robotx.modules.LiftSystem;
 import robotx.modules.Launcher;
 import robotx.modules.OrientationDrive;
+import robotx.modules.WeirdDrive;
 
 @TeleOp(name = "RobotXOpMode2021", group = "Default")
 
 public class RobotXOpMode2021 extends XOpMode {
 
-    OrientationDrive orientationDrive;
+    /*OrientationDrive orientationDrive;
     IntakeSystem intakeSystem;
     ConveyorBelt conveyorBelt;
     LiftSystem liftSystem;
     Launcher launcher;
+    */
+    WeirdDrive weirdDrive;
+
 
 
     public void initModules() {
 
         super.initModules();
 
-        orientationDrive = new OrientationDrive(this);
+       /* orientationDrive = new OrientationDrive(this);
         activeModules.add(orientationDrive);
 
-        intakeSystem = new IntakeSystem(this);
+        //intakeSystem = new IntakeSystem(this);
         activeModules.add(intakeSystem);
 
         conveyorBelt = new ConveyorBelt(this);
@@ -37,8 +41,14 @@ public class RobotXOpMode2021 extends XOpMode {
         liftSystem = new LiftSystem(this);
         activeModules.add(liftSystem);
 
-        launcher = new Launcher(this);
+        //launcher = new Launcher(this);
         activeModules.add(launcher);
+        */
+
+        weirdDrive = new WeirdDrive(this);
+        activeModules.add(weirdDrive);
+
+
 
 
     }
